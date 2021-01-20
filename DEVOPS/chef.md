@@ -78,11 +78,68 @@ Chef is developed using "Ruby". It was introduced in 2008 as OPS Code and later 
  * copy the chef DK  url from chef dowload site
  * perform download in centos using wget <ur>
  * Install the chef
-  * validate the chef version using "chef -version"
-  * Validate the Knife ersion using "kinife -version"
+ * validate the chef version using "chef -version"
+ * Validate the Knife ersion using "kinife -version"
  
   
+  # 8 Setup Chef Client
+  * Netwrok connectivity
+  * File system space
+  * Persistent Hostname
+  * Supported platform
+  * Time Sync- using NTP
+  * System Requirement - no specific
   
+  Chef client can be installed by
+  * Chef Client - install package
+  * knife bootstrap method
+  
+  
+  # 9 
+  
+  # Chef Concept
+  # 10 Chef Architecture
+  
+  3 major components:
+  * Chef Workstation - where we will develop our recepies and cookbook. OT communiate to server via public RSA key.
+  * Chef Server - is a centre repository. we are all the information are stored.
+  * Chef Client - it installed in all the node such as VM, Cloud, Network devices. It will establish a communication via RSA public keypair to connect the server.( OHIA command)
+  
+  ### Chef Terminologies
+  * Resoruces
+  * Receipe - combination of resources
+  * Cookbook - Combinaion of receipe
+  * runbook - Combniation of cookbook.
+  
+  # 11 Chef Resources
+  
+  Fundamental building block of chef architecture
+  ### 2 kinds of resources:
+  * Built in
+   * File 
+   * User file etc -- refer to doc
+  * Custom resoruse - from 12.5
+  
+  # 12 Demo - Chef Resources
+  
+  ### doc.chef.io
+  
+  # 13 Chef DSL
+  
+  ### DSL - Domain Specification Language
+  
+   6 Different types
+   * Resource Type/ Resource Name
+   * Start Block
+   * Attribute Name/Atrribute Value 
+   * Action/Action Value
+   * End 
+   * # - Comment line
+   
+   ### Example Apache Application
+   
+  
+  # 14 
   
   
   
